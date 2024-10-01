@@ -1,0 +1,34 @@
+.home {
+  border: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.myImg,
+.speechBubbleImg {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: relative;
+  height: 100%;
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .text {
+    font-size: 2rem;
+  }
+}
