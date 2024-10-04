@@ -1,0 +1,45 @@
+.project {
+  padding: 50px 30px;
+  border: 5px solid black;
+  width: 100%;
+  min-width: 300px;
+
+  background-image: url("/action_line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.speechBubble {
+  width: 100%;
+}
+
+.line {
+  position: relative;
+
+  .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.img {
+  border: 0.5px solid rgb(191, 191, 191);
+  transition: 0.2s;
+  width: 100%;
+  height: auto;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
