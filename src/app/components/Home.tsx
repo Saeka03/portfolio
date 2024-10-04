@@ -10,7 +10,7 @@ function Home() {
           className={styles.myImg}
           src={"/me.svg"}
           alt={"My illust"}
-          width={200}
+          width={225}
           height={225}
         />
       </div>
@@ -19,7 +19,7 @@ function Home() {
           className={styles.speechBubbleImg}
           src={"/speech_bubble1.svg"}
           alt={"Speech bubble 1"}
-          width={200}
+          width={225}
           height={225}
         />
         <div className={styles.text}>Hi, I am Saeka!</div>
