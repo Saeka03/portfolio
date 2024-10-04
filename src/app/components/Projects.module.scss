@@ -1,0 +1,9 @@
+.project {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    flex-wrap: wrap;
+  }
+}
