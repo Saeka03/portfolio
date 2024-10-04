@@ -1,0 +1,29 @@
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.boxes {
+  display: flex;
+}
+
+.speechBubble {
+  width: 60%;
+  height: auto;
+}
+
+@media only screen and (min-width: 550px) {
+  .text {
+    font-size: 1.8rem;
+  }
+}

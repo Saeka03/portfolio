@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 
 export default function Page() {
   return (
@@ -10,7 +11,7 @@ export default function Page() {
       <Navbar />
       <Home />
       <AboutMe />
-      <h1 className={styles.next}>Hello, Next.js!</h1>
+      <Skills />
     </div>
   );
 }
