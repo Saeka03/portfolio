@@ -1,23 +1,38 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./BackendSkills.module.scss";
-import { FaNodeJs } from "react-icons/fa";
-import { DiPostgresql } from "react-icons/di";
-import { SiPrisma } from "react-icons/si";
 
 function BackendSkills() {
   return (
-    <div>
+    <div className={styles.container}>
       <Image
         className={styles.img}
-        src={"/box3.svg"}
-        alt="Box3"
+        src={"/box1.png"}
+        alt="Box1"
         width={100}
         height={100}
       />
-      <FaNodeJs size={50} />
-      <DiPostgresql size={50} />
-      <SiPrisma size={50} />
+      <Image
+        className={styles.icon}
+        src={"nodejs.svg"}
+        alt="Node.js"
+        width={50}
+        height={50}
+      />
+      <Image
+        className={styles.icon}
+        src={"postgresql.svg"}
+        alt="PostgreSQL"
+        width={50}
+        height={50}
+      />
+      <Image
+        className={styles.icon}
+        src={"prisma.svg"}
+        alt="Prisma"
+        width={50}
+        height={50}
+      />
     </div>
   );
 }

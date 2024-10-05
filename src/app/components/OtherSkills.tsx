@@ -1,21 +1,31 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./OtherSkills.module.scss";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
 
 function OtherSkills() {
   return (
-    <div>
+    <div className={styles.container}>
       <Image
         className={styles.img}
-        src={"/box1.svg"}
-        alt="Box1"
+        src={"/box3.png"}
+        alt="Box3"
         width={100}
         height={100}
       />
-      <SiJavascript size={50} />
-      <SiTypescript size={50} />
+      <Image
+        className={styles.icon}
+        src={"js.svg"}
+        alt="JS"
+        width={50}
+        height={50}
+      />
+      <Image
+        className={styles.icon}
+        src={"ts.svg"}
+        alt="TS"
+        width={50}
+        height={50}
+      />
     </div>
   );
 }
