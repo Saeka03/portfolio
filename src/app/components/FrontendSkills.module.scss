@@ -2,3 +2,33 @@
   width: 100%;
   height: 100%;
 }
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+
+  .img {
+    position: relative;
+  }
+
+  .react {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+  }
+
+  .nextjs {
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+  }
+
+  .sass {
+    position: absolute;
+    bottom: 20%;
+    left: 80%;
+  }
+}

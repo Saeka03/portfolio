@@ -10,6 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    animation: scalingText 3s ease-in-out infinite;
   }
 }
 
@@ -20,6 +21,31 @@
 .speechBubble {
   width: 60%;
   height: auto;
+  animation: scaling 3s ease-in-out infinite;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scalingText {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media only screen and (min-width: 550px) {

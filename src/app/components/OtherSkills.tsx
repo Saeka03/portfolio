@@ -1,21 +1,51 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./OtherSkills.module.scss";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
+import { motion } from "framer-motion";
 
 function OtherSkills() {
+  const [hovered, setHovered] = useState<string | null>(null);
   return (
-    <div>
+    <div className={styles.container}>
       <Image
         className={styles.img}
-        src={"/box1.svg"}
-        alt="Box1"
+        src={"/box3.png"}
+        alt="Box3"
         width={100}
         height={100}
       />
-      <SiJavascript size={50} />
-      <SiTypescript size={50} />
+      <motion.img
+        className={styles.js}
+        onMouseEnter={() => setHovered("js")}
+        onMouseLeave={() => setHovered(null)}
+        animate={hovered === "js" ? { rotate: 360 } : { rotate: 0 }}
+        transition={{
+          repeat: hovered === "js" ? Infinity : 0,
+          duration: 1,
+          ease: "linear",
+        }}
+        src={"js.svg"}
+        alt="JS"
+        width={50}
+        height={50}
+      />
+      <motion.img
+        className={styles.ts}
+        onMouseEnter={() => setHovered("ts")}
+        onMouseLeave={() => setHovered(null)}
+        animate={hovered === "ts" ? { rotate: 360 } : { rotate: 0 }}
+        transition={{
+          repeat: hovered === "ts"  ? Infinity : 0,
+          duration: 1,
+          ease: "linear",
+        }}
+        src={"ts.svg"}
+        alt="TS"
+        width={50}
+        height={50}
+      />
     </div>
   );
 }
