@@ -5,4 +5,23 @@
 
 .container {
   width: 100%;
+  position: relative;
+
+  .nodejs {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+  
+  .postgresql {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+
+  .prisma {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+  }
 }
