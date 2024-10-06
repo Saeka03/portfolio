@@ -1,4 +1,38 @@
+.container {
+  height: 100vh;
+  border: 10px solid black;
+  position: relative;
+
+  .scrolling {
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid gray;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(9, 91, 9);
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      position: absolute;
+      bottom: 19%;
+      left: 45.5%;
+    }
+  }
+}
+
 .line {
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,5 +85,27 @@
 @media only screen and (min-width: 550px) {
   .text {
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    height: auto;
+
+    .scrolling {
+      width: 55px;
+      height: 55px;
+      font-size: 20px;
+      bottom: 8%;
+
+      &:active {
+        bottom: 7.5%;
+      }
+    }
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

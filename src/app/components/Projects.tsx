@@ -4,13 +4,14 @@ import styles from "./Projects.module.scss";
 
 function Projects() {
   return (
-    <div className={styles.project}>
+    <div className={styles.container}>
       <Project
         name="Online Class Management System"
         img="/management_system.png"
         url="https://aaasobo-management-system-frontend.vercel.app/customers/login"
       />
       <Project name="Weather application" img="" url="" />
+      <button className={styles.scrolling}>▲</button>
     </div>
   );
 }

@@ -8,6 +8,7 @@ function AboutMe() {
     <div className={styles.container}>
       <FindMe />
       <Contact />
+      <button className={styles.scrolling}>▼</button>
     </div>
   );
 }

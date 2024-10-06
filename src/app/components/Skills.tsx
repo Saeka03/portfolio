@@ -23,6 +23,7 @@ function Skills() {
         <FrontendSkills />
         <BackendSkills />
       </div>
+      <button className={styles.scrolling}>▼</button>
     </div>
   );
 }
