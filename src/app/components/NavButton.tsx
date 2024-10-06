@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./NavButton.module.scss";
 import { IconType } from "react-icons";
@@ -8,9 +7,10 @@ import { IconType } from "react-icons";
 type NavButtonProps = {
   name: string;
   icon: IconType;
+  onClick: () => void;
 };
 
-function NavButton({ name, icon: Icon }: NavButtonProps) {
+function NavButton({ name, icon: Icon, onClick }: NavButtonProps) {
   const [hovered, setHovered] = useState<string | null>(null);
 
   const handleMouseEnter = (name: string) => {
@@ -27,8 +27,9 @@ function NavButton({ name, icon: Icon }: NavButtonProps) {
         className={styles.navButton}
         onMouseEnter={() => handleMouseEnter(name)}
         onMouseLeave={handleMouseLeave}
+        onClick={onClick}
       >
-        <Icon size={40} />    
+        <Icon size={40} />
         <div
           className={`${styles.text} ${
             hovered === name ? styles.showText : ""

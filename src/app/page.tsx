@@ -23,7 +23,12 @@ export default function Page() {
 
   return (
     <div ref={navbarRef}>
-      <Navbar />
+      <Navbar
+        scrollingToHome={() => scrollingToSection(homeRef)}
+        scrollingToAboutMe={() => scrollingToSection(aboutMeRef)}
+        scrollingToSkills={() => scrollingToSection(skillsRef)}
+        scrollingToProjects={() => scrollingToSection(projectsRef)}
+      />
       <Home
         scrollingHandler={() => scrollingToSection(aboutMeRef)}
         ref={homeRef}
