@@ -1,40 +1,44 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { forwardRef } from "react";
 import styles from "./Home.module.scss";
 
-function Home() {
-  const nextSectionRef = useRef(null);
-  const handleScroll = () => {
-    // nextSectionRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-  return (
-    <div className={styles.container}>
-      <div className={styles.home}>
-        <div className={styles.me}>
-          <Image
-            className={styles.myImg}
-            src={"/me.svg"}
-            alt={"My illustration"}
-            width={225}
-            height={225}
-          />
+type HomeProps = {
+  scrollingHandler: () => void;
+};
+
+const Home = forwardRef<HTMLDivElement, HomeProps>(
+  ({ scrollingHandler }, ref) => {
+    return (
+      <div className={styles.container} ref={ref}>
+        <div className={styles.home}>
+          <div className={styles.me}>
+            <Image
+              className={styles.myImg}
+              src={"/me.svg"}
+              alt={"My illustration"}
+              width={225}
+              height={225}
+            />
+          </div>
+          <div className={styles.line}>
+            <Image
+              className={styles.speechBubbleImg}
+              src={"/speech_bubble1.svg"}
+              alt={"Speech bubble 1"}
+              width={225}
+              height={225}
+            />
+            <div className={styles.text}>Hi, I am Saeka!</div>
+          </div>
         </div>
-        <div className={styles.line}>
-          <Image
-            className={styles.speechBubbleImg}
-            src={"/speech_bubble1.svg"}
-            alt={"Speech bubble 1"}
-            width={225}
-            height={225}
-          />
-          <div className={styles.text}>Hi, I am Saeka!</div>
-        </div>
+        <button className={styles.scrolling} onClick={scrollingHandler}>
+          ▼
+        </button>
       </div>
-      <button className={styles.scrolling}>▼</button>
-    </div>
-  );
-}
+    );
+  }
+);
 
 export default Home;
