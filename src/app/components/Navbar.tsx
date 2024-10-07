@@ -7,6 +7,7 @@ import { SlHome } from "react-icons/sl";
 import { HiOutlineUser } from "react-icons/hi2";
 import { GoGear } from "react-icons/go";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import Hamburger from "./Hamburger";
 
 type NavbarProps = {
   scrollingToHome: () => void;
@@ -23,6 +24,7 @@ function Navbar({
 }: NavbarProps) {
   return (
     <div className={styles.container}>
+      <Hamburger />
       <NavButton name={"HOME"} icon={SlHome} onClick={scrollingToHome} />
       <NavButton
         name={"ABOUT ME"}
