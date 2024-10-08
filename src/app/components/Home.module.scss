@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   border: 10px solid black;
+  overflow: hidden;
 
   .scrolling {
     width: 80px;
@@ -17,7 +18,8 @@
 
     position: absolute;
     bottom: 20%;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     &:hover {
       opacity: 0.8;
@@ -33,13 +35,15 @@
 
 .home {
   display: flex;
+  align-items: center;
+  justify-content: center;
   // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .myImg,
 .speechBubbleImg {
-  width: 100%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
 }
 
 .line {
@@ -108,5 +112,11 @@
   .home {
     flex-wrap: wrap-reverse;
     gap: 20px;
+  }
+
+  .myImg,
+  .speechBubbleImg {
+    width: 100vw;
+    height: auto;
   }
 }
