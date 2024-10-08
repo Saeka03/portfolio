@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import NavButton from "./NavButton";
 import { SlHome } from "react-icons/sl";
@@ -22,20 +22,37 @@ function Navbar({
   scrollingToSkills,
   scrollingToProjects,
 }: NavbarProps) {
+  const [isActive, setIsActive] = useState<boolean>(false);
+  const hamburgerHandler = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <div className={styles.container}>
-      <Hamburger />
-      <NavButton name={"HOME"} icon={SlHome} onClick={scrollingToHome} />
+      <Hamburger isActive={isActive} hamburgerHandler={hamburgerHandler} />
+      <NavButton
+        name={"HOME"}
+        icon={SlHome}
+        onClick={scrollingToHome}
+        isActive={isActive}
+      />
       <NavButton
         name={"ABOUT ME"}
         icon={HiOutlineUser}
         onClick={scrollingToAboutMe}
+        isActive={isActive}
       />
-      <NavButton name={"SKILLS"} icon={GoGear} onClick={scrollingToSkills} />
+      <NavButton
+        name={"SKILLS"}
+        icon={GoGear}
+        onClick={scrollingToSkills}
+        isActive={isActive}
+      />
       <NavButton
         name={"PROJECTS"}
         icon={IoDocumentTextOutline}
         onClick={scrollingToProjects}
+        isActive={isActive}
       />
     </div>
   );

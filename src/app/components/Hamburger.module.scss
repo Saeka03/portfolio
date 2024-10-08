@@ -6,8 +6,8 @@
   background-color: black;
   cursor: pointer;
 
-  &hover {
-    opacity: 0.8;
+  &:hover {
+    opacity: 0.6;
   }
 
   .bar {
@@ -19,5 +19,15 @@
 
   .bottomBar {
     width: 20px;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .hamburger {
+    display: block;
   }
 }

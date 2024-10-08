@@ -34,3 +34,18 @@
 .showUnderLine {
   width: 100%;
 }
+
+.menu {
+  display: none;
+}
+
+.activeMenu {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .buttonContainer {
+    display: none;
+  }
+}
