@@ -3,6 +3,7 @@
   height: 100vh;
   border: 10px solid black;
   position: relative;
+  overflow: hidden;
 
   .scrolling {
     width: 80px;
@@ -17,8 +18,9 @@
     cursor: pointer;
 
     position: absolute;
-    bottom: 20%;
-    left: 45%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     &:hover {
       opacity: 0.8;
