@@ -16,7 +16,7 @@ const Home = forwardRef<HTMLDivElement, HomeProps>(
           <div className={styles.me}>
             <Image
               className={styles.myImg}
-              src={"/me.svg"}
+              src={"/me.png"}
               alt={"My illustration"}
               width={225}
               height={225}
@@ -25,7 +25,7 @@ const Home = forwardRef<HTMLDivElement, HomeProps>(
           <div className={styles.line}>
             <Image
               className={styles.speechBubbleImg}
-              src={"/speech_bubble1.svg"}
+              src={"/speech_bubble1.png"}
               alt={"Speech bubble 1"}
               width={225}
               height={225}

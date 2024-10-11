@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   border: 10px solid black;
+  overflow: hidden;
 
   .scrolling {
     width: 80px;
@@ -16,8 +17,9 @@
     cursor: pointer;
 
     position: absolute;
-    bottom: 20%;
-    left: 45%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     &:hover {
       opacity: 0.8;
@@ -25,21 +27,23 @@
 
     &:active {
       position: absolute;
-      bottom: 19%;
-      left: 45.5%;
+      bottom: 9%;
+      left: 50.5%;
     }
   }
 }
 
 .home {
   display: flex;
-  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 .myImg,
 .speechBubbleImg {
-  width: 100%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
 }
 
 .line {
@@ -83,12 +87,6 @@
   }
 }
 
-@media only screen and (min-width: 550px) {
-  .text {
-    font-size: 2rem;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   .container {
     height: auto;
@@ -108,5 +106,11 @@
   .home {
     flex-wrap: wrap-reverse;
     gap: 20px;
+  }
+
+  .myImg,
+  .speechBubbleImg {
+    width: 100vw;
+    height: auto;
   }
 }

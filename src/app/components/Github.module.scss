@@ -1,6 +1,7 @@
 .button {
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 5px;
+  font-size: 2rem;
   width: 50%;
   text-decoration: none;
   color: black;
@@ -9,8 +10,8 @@
   transition: 0.2s;
 
   position: absolute;
-  top: 65%;
-  left: 30%;
+  top: 35%;
+  left: 25%;
 
   display: flex;
   justify-content: center;
@@ -18,13 +19,13 @@
   gap: 0.2rem;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   &:active {
     position: absolute;
-    top: 66%;
-    left: 31%;
+    top: 36%;
+    left: 26%;
     box-shadow: none;
   }
 }

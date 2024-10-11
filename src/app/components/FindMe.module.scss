@@ -1,5 +1,5 @@
 .speechBubbleImg {
-  width: 100%;
+  width: 50vw;
   height: 100%;
   animation: floatingBubble 3s ease-in-out infinite;
 }
@@ -45,5 +45,12 @@
 @media only screen and (min-width: 550px) {
   .text {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .speechBubbleImg {
+    width: 100vw;
+    animation: floatingBubble 3s ease-in-out infinite;
   }
 }

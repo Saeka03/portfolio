@@ -10,7 +10,7 @@ function Contact() {
     <div className={styles.contact}>
       <Image
         className={styles.img}
-        src={"/laptop.svg"}
+        src={"/laptop.png"}
         alt="laptop"
         width={225}
         height={225}
