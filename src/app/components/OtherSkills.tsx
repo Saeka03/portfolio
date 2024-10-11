@@ -11,7 +11,7 @@ function OtherSkills() {
     <div className={styles.container}>
       <Image
         className={styles.img}
-        src={"/box3.png"}
+        src={"/toy-box.png"}
         alt="Box3"
         width={100}
         height={100}

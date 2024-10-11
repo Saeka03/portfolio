@@ -1,12 +1,11 @@
 .img {
-  width: 100%;
-  height: 100%;
+  width: 33.3vw;
+  height: 100vh;
 }
 
 .container {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
   width: 100%;
   height: auto;
 
@@ -14,21 +13,15 @@
     position: relative;
   }
 
-  .react {
+  .icon {
     position: absolute;
-    bottom: 40%;
-    left: 40%;
+    bottom: 30%
   }
+}
 
-  .nextjs {
-    position: absolute;
-    bottom: 30%;
-    left: 60%;
-  }
-
-  .sass {
-    position: absolute;
-    bottom: 20%;
-    left: 80%;
+@media only screen and (max-width: 700px) {
+  .img {
+    width: 100vw;
+    height: auto;
   }
 }

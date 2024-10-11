@@ -14,45 +14,36 @@ function FrontendSkills() {
         width={100}
         height={100}
       />
-      <motion.div
-        initial={{ scale: 0, x: 0, y: 100 }}
-        animate={{ scale: 1.3, x: 100, y: -200 }}
+      <motion.img
+        initial={{ scale: 0.3, x: 0, y: 0 }}
+        animate={{ scale: 1.3, x: 160, y: -400 }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-      >
-        <Image
-          className={`${styles.icon} ${styles.react}`}
-          src={"react.svg"}
-          alt="React"
-          width={50}
-          height={50}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ scale: 0, x: 0, y: 100 }}
-        animate={{ scale: 1.2, x: 200, y: -120 }}
+        className={`${styles.icon} ${styles.react}`}
+        src={"react.svg"}
+        alt="React"
+        width={50}
+        height={50}
+      ></motion.img>
+      <motion.img
+        initial={{ scale: 0.3, x: 0, y: 0 }}
+        animate={{ scale: 1.3, x: 230, y: -300 }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-      >
-        <Image
-          className={`${styles.icon} ${styles.nextjs}`}
-          src={"nextjs.svg"}
-          alt="Next.js"
-          width={50}
-          height={50}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ scale: 0, x: 0, y: 100 }}
-        animate={{ scale: 1.2, x: 300, y: -80 }}
+        className={`${styles.icon} ${styles.nextjs}`}
+        src={"nextjs.svg"}
+        alt="Next.js"
+        width={50}
+        height={50}
+      ></motion.img>
+      <motion.img
+        initial={{ scale: 0.3, x: 0, y: 0 }}
+        animate={{ scale: 1.3, x: 280, y: -200 }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-      >
-        <Image
-          className={`${styles.icon} ${styles.sass}`}
-          src={"sass.svg"}
-          alt="SASS"
-          width={50}
-          height={50}
-        />
-      </motion.div>
+        className={`${styles.icon} ${styles.sass}`}
+        src={"sass.svg"}
+        alt="SASS"
+        width={50}
+        height={50}
+      ></motion.img>
     </div>
   );
 }
