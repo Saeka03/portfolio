@@ -1,7 +1,6 @@
 .project {
   padding: 50px 30px;
-  width: 100%;
-  min-width: 300px;
+  width: 50vw;
 
   background-image: url("/action_line.svg");
   background-repeat: no-repeat;
@@ -12,11 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .speechBubble {
   width: 100%;
+  height: 100%;
   animation: scaling 3s ease-in-out infinite;
 }
 
@@ -24,8 +24,9 @@
   position: relative;
 
   .text {
-    width: 100%;
+    width: 80%;
     position: absolute;
+    font-size: 1.2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -66,5 +67,12 @@
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    height: auto;
+    width: 100vw;
   }
 }
