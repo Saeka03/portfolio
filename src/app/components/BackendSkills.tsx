@@ -10,14 +10,14 @@ function BackendSkills() {
     <div className={styles.container}>
       <Image
         className={styles.img}
-        src={"/box1.png"}
-        alt="Box1"
+        src={"/table.png"}
+        alt="table"
         width={100}
         height={100}
       />
       <motion.img
         className={styles.nodejs}
-        whileInView={{ translateY: 200, translateX: 10, rotate: 60 }}
+        whileInView={{ translateY: 400, translateX: 10, rotate: 60 }}
         transition={{
           type: "spring",
           stiffness: 100,
@@ -30,7 +30,7 @@ function BackendSkills() {
       />
       <motion.img
         className={styles.postgresql}
-        whileInView={{ translateY: 200, rotate: -30 }}
+        whileInView={{ translateY: 400, rotate: -30 }}
         transition={{
           type: "spring",
           stiffness: 100,
@@ -43,7 +43,7 @@ function BackendSkills() {
       />
       <motion.img
         className={styles.prisma}
-        whileInView={{ translateY: 200, translateX: 30, rotate: 90 }}
+        whileInView={{ translateY: 400, translateX: 30, rotate: 90 }}
         transition={{
           type: "spring",
           stiffness: 100,

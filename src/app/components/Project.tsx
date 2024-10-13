@@ -15,7 +15,7 @@ function Project({ name, img, url }: ProjectProps) {
       <div className={styles.line}>
         <Image
           className={styles.speechBubble}
-          src={"/speech_bubble4.svg"}
+          src={"/speech_bubble4.png"}
           alt="Speech bubble4"
           width={100}
           height={50}
