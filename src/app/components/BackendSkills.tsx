@@ -17,7 +17,7 @@ function BackendSkills() {
       />
       <motion.img
         className={styles.nodejs}
-        whileInView={{ translateY: 400, translateX: 10, rotate: 60 }}
+        whileInView={{ translateY: 300, translateX: 10, rotate: 60 }}
         transition={{
           type: "spring",
           stiffness: 100,
@@ -30,7 +30,7 @@ function BackendSkills() {
       />
       <motion.img
         className={styles.postgresql}
-        whileInView={{ translateY: 400, rotate: -30 }}
+        whileInView={{ translateY: 300, rotate: -30 }}
         transition={{
           type: "spring",
           stiffness: 100,
@@ -43,7 +43,7 @@ function BackendSkills() {
       />
       <motion.img
         className={styles.prisma}
-        whileInView={{ translateY: 400, translateX: 30, rotate: 90 }}
+        whileInView={{ translateY: 300, translateX: 30, rotate: 90 }}
         transition={{
           type: "spring",
           stiffness: 100,
